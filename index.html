@@ -4,7 +4,7 @@
         <meta charset="utf-8" />
         <meta name="viewport" content="width=device-width, initial-scale=1" />
         <title>Proyectos – Diseño - UCH</title>
-        <meta name="description" content="Proyectos — Entrega final y abierta de los cursos de Proyecto impartidos en la Universidad de Chile durante el segundo semestre de 2024">
+        <meta name="description" content="Proyectos — Entrega final y abierta de los cursos de Proyecto de Diseño impartidos en la Universidad de Chile durante el segundo semestre de 2024" />
         <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous" />
         <link rel="preconnect" href="https://fonts.googleapis.com" />
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
@@ -45,14 +45,14 @@
                 font-weight: 700;
                 line-height: 1.1;
                 margin: 2vw 0 1vw -0.02em;
-                margin:;
+                margin: ;
             }
 
             h2 {
                 font-size: calc(1rem + 1vw);
                 font-weight: 300;
-                color: #aaa;
-                margin-bottom:3vw;
+                color: rgba(33, 37, 41, 0.5);
+                margin-bottom: 3vw;
             }
 
             h3 {
@@ -74,17 +74,19 @@
                 padding: 0.5rem 0;
             }
 
-            dl > dt > a, dl > dt > span {
+            dl > dt > a {
                 display: block;
                 font-size: 88%;
-                color: #bbb;
+                color: rgba(33, 37, 41, 0.4);
                 letter-spacing: 0.01rem;
                 text-decoration: none;
+                transition: color 0.5s ease;
             }
 
-            dl > dt > a:hover{
+            dl > dt > a:hover {
                 text-decoration: underline;
-                color: #999;
+                color: rgba(33, 37, 41, 0.6);
+                transition: color 0.5s ease;
             }
 
             dl > dd {
@@ -93,8 +95,14 @@
                     url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" width="0.8rem" height="0.8rem" fill="lightsteelblue" viewBox="0 0 16 16"><path d="M8 0a8 8 0 1 1 0 16A8 8 0 0 1 8 0M4.5 7.5a.5.5 0 0 0 0 1h5.793l-2.147 2.146a.5.5 0 0 0 .708.708l3-3a.5.5 0 0 0 0-.708l-3-3a.5.5 0 1 0-.708.708L10.293 7.5z"/></svg>')
                     left 9px no-repeat;
             }
-            dl > dd > em {
+
+            div.collapse {
+                font-weight: 300;
+            }
+
+            em {
                 font-weight: 400;
+                text-style: normal;
             }
         </style>
     </head>
@@ -114,24 +122,40 @@
                 <section class="col-11 mx-auto py-2">
                     <h4>JUEVES 12, DESDE LAS 15:00 HRS.</h4>
                     <dl>
-                        <dt>Proyecto I<a href="https://ucampus.uchile.cl/m/fau_catalogo/programa?bajar=1&id=40545" download="PROGRAMA DE CURSO">AUD10001</a></dt>
+                        <dt>Proyecto I <a data-bs-toggle="collapse" href="#proyecto1" role="button" aria-expanded="false" aria-controls="proyecto1" class="m-0 p-0">AUD10001</a></dt>
+                        <div class="collapse small mb-2 text-body-tertiary" id="proyecto1">
+                            <strong>Ciclo formativo 1</strong>: Reconocer para interpretar. <strong>Propósito formativo</strong>: Desarrollo de la observación, definición y conceptualización de relaciones presentes en el entorno a través de
+                            los procesos de conceptualización y las herramientas de representación propias del Diseño.
+                        </div>
                         <dd>Sección 1: <em>Proyecto enmascarado</em>. Sección a cargo de Andrea Meza. En escalera de piedra y sala B16.</dd>
                         <dd>Sección 2: <em>Perspectiva Difractiva</em>. Sección a cargo de Gabriela Vergara. En sala E15.</dd>
                         <dd>Sección 3: <em>Libro de artista</em>. Sección a cargo de Mauricio Vico. En sala F15.</dd>
                     </dl>
                     <dl>
-                        <dt>Proyecto II<a href="https://ucampus.uchile.cl/m/fau_catalogo/programa?bajar=1&id=40549" download="PROGRAMA DEL CURSO">AUD20001</a></dt>
+                        <dt>Proyecto I <a data-bs-toggle="collapse" href="#proyecto2" role="button" aria-expanded="false" aria-controls="proyecto2" class="m-0 p-0">AUD20001</a></dt>
+                        <div class="collapse small mb-2 text-body-tertiary" id="proyecto2">
+                            <strong>Ciclo formativo 1</strong>: Reconocer para interpretar. <strong>Propósito formativo</strong>: Profundizar en la observación y problematización del contexto, entregar herramientas para la conceptualización
+                            de propuestas de diseño a través de proyectos de baja complejidad que aborden aspectos de interfaz e interacción.
+                        </div>
                         <dd>Sección 1: <em>Evolución de Especies</em>. Sección a cargo de René Perea. En sala D12.</dd>
                         <dd>Sección 2: <em>Estructura contenedora y exhibidora de un “Objeto de Luz”</em>. Sección a cargo de Gabriela Pradenas. En sala D11.</dd>
                         <dd>Sección 3: <em>Propuestas de diseño para el café</em>. Sección a cargo de Paula Ron. En sala C11.</dd>
                     </dl>
                     <dl>
-                        <dt>Proyecto III<a href="https://ucampus.uchile.cl/m/fau_catalogo/programa?bajar=1&id=40557" download="PROGRAMA DEL CURSO">AUD30001</a></dt>
+                        <dt>Proyecto III <a data-bs-toggle="collapse" href="#proyecto3" role="button" aria-expanded="false" aria-controls="proyecto3" class="m-0 p-0">AUD30001</a></dt>
+                        <div class="collapse small mb-2 text-body-tertiary" id="proyecto3">
+                            <strong>Ciclo formativo 1</strong>: Reconocer para interpretar. <strong>Propósito formativo</strong>: Conocimiento, aplicación y comprensión de la metodología del diseño, con énfasis en sus especialidades.
+                            Integración de los conceptos de contexto y usuario, problema o necesidad, requerimientos, atributos y restricciones para el planteamiento de propuestas de diseño.
+                        </div>
                         <dd>Sección 1: <em>Campaña electoral botánica</em>. Sección a cargo de María Paz Morales. En sala B17.</dd>
                         <dd>Sección 2: <em>Estereopsis</em>. Sección a cargo de Bruno Rossi. En sala F16.</dd>
                     </dl>
                     <dl>
-                        <dt>Proyecto IV<a href="https://ucampus.uchile.cl/m/fau_catalogo/programa?bajar=1&id=43281" download="PROGRAMA DEL CURSO">AUD40001</a></dt>
+                        <dt>Proyecto IV <a data-bs-toggle="collapse" href="#proyecto4" role="button" aria-expanded="false" aria-controls="proyecto4" class="m-0 p-0">AUD40001</a></dt>
+                        <div class="collapse small mb-2 text-body-tertiary" id="proyecto4">
+                            <strong>Ciclo formativo 1</strong>: Reconocer para interpretar. <strong>Propósito formativo</strong>: Profundización en herramientas e instrumentos propios de la metodología del diseño, con énfasis en sus
+                            especialidades. Desarrollo de propuestas de complejidad media, que consideren contextos multiescalares e integren restricciones y variables productivas básicas.
+                        </div>
                         <dd>Sección 1: <em>Territorios materiales</em>. Sección a cargo de Clarisa Menteguiaga. En sala C21.</dd>
                         <dd>Sección 2: <em>Movimiento y transformación</em>. Sección a cargo de Macarena Becas. En sala D22.</dd>
                         <dd>Sección 3: <em>Del análisis objetual a la propuesta de diseño</em>. Sección a cargo de Verónica Ode. En sala D21.</dd>
@@ -141,12 +165,20 @@
                 <section class="col-11 mx-auto pt-4 pb-2">
                     <h4>VIERNES 13, DESDE LAS 15:00 HRS.</h4>
                     <dl>
-                        <dt>Proyecto VI - Mención Industrial y Servicios <span>AUD6I001</span></dt>
+                        <dt>Proyecto VI - Mención Industrial y Servicios <a data-bs-toggle="collapse" href="#proyecto6is" role="button" aria-expanded="false" aria-controls="proyecto6is" class="m-0 p-0">AUD6I001</a></dt>
+                        <div class="collapse small mb-2 text-body-tertiary" id="proyecto6is">
+                            <strong>Ciclo formativo 2</strong>: Explorar para intervenir. <strong>Propósito formativo</strong>: Estructura proyectos y desarrolla propuestas de diseño de alta complejidad, con énfasis en la ciencia y la
+                            tecnología, incorporando las variables propias del contexto en que se plantea la intervención y con un alto nivel de factibilidad técnica, productiva y económica.
+                        </div>
                         <dd>Sección 1: <em>Ensamble Sostenible FAU-FAVET - Diseño Cerámico e Innovación para la Desertificación. Monte Patria, Coquimbo IV Región. Chile</em>. Sección a cargo de Carlota Durán. En sala B23.</dd>
                         <dd>Sección 2. Sección a cargo de Sergio Donoso. En sala B24.</dd>
                     </dl>
                     <dl>
-                        <dt>Proyecto VI - Mención Visual y Medios <span>AUD6V001</span></dt>
+                        <dt>Proyecto VI - Mención Visual y Medios <a data-bs-toggle="collapse" href="#proyecto6vm" role="button" aria-expanded="false" aria-controls="proyecto6vm" class="m-0 p-0">AUD6V001</a></dt>
+                        <div class="collapse small mb-2 text-body-tertiary" id="proyecto6vm">
+                            <strong>Ciclo formativo 2</strong>: Explorar para intervenir. <strong>Propósito formativo</strong>: Estructura proyectos y desarrolla propuestas de diseño de alta complejidad, con énfasis en la ciencia y la
+                            tecnología, incorporando las variables propias del contexto en que se plantea la intervención y con un alto nivel de factibilidad técnica, productiva y económica.
+                        </div>
                         <dd>Sección 1: <em>Mini documental animado</em>. Sección a cargo de Sebastián Pagueguy. En sala F15.</dd>
                         <dd>Sección 2: <em>Diseño editorial a partir de la creación de una editorial y catálogo</em>. Sección a cargo de Jenny Abud. En sala E15.</dd>
                     </dl>
@@ -154,7 +186,11 @@
             </main>
             <footer class="row">
                 <div class="col-11 mx-auto mt-4 mb-5 alert alert-light">
-                    <p class="m-0 small">Si usted pertenece a la <a  href="https://www.redis.cl/index.php/quienes-somos/" target="_blank" class="link-dark">ReDis</a>: Puede inscribirse en <a href="https://docs.google.com/forms/d/e/1FAIpQLSf21gqpCbLpDh2E4apb9BzTKWtf-Zw7bHoDwmTmQtePEnzpWw/viewform?usp=sharing" class="link-dark" target="_blank">este formulario</a> para asistir a la entrega de Proyectos y, también, asistir a la <a href="https://disenouchile.github.io/seminarios/" class="link-dark">Sesión de póster académico</a>.</p>
+                    <p class="m-0 small">
+                        Si usted pertenece a la <a href="https://www.redis.cl/index.php/quienes-somos/" target="_blank" class="link-dark">ReDis</a>: Puede inscribirse en
+                        <a href="https://docs.google.com/forms/d/e/1FAIpQLSf21gqpCbLpDh2E4apb9BzTKWtf-Zw7bHoDwmTmQtePEnzpWw/viewform?usp=sharing" class="link-dark" target="_blank">este formulario</a> para asistir a la entrega de Proyectos
+                        y, también, asistir a la <a href="https://disenouchile.github.io/seminarios/" class="link-dark">Sesión de póster académico</a>.
+                    </p>
                 </div>
             </footer>
         </div>
@@ -162,10 +198,12 @@
             <div class="row">
                 <div class="col-11 my-4 mx-auto small text-white fw-light">
                     <div class="d-flex justify-content-between align-items-center">
-                        <span><span class="d-none d-md-inline">Desarrollado por </span><a href="https://faco.cl" class="link-light" title="Felipe Alberto Cortez Orellana" target="_blank">FACO</a></span> <a href="mailto:coordinacion.titulo.diseno@uchilefau.cl" class="link-light">coordinacion.titulo.diseno@uchilefau.cl</a>
+                        <span><span class="d-none d-md-inline">Desarrollado por </span><a href="https://faco.cl" class="link-light" title="Felipe Alberto Cortez Orellana" target="_blank">FACO</a></span>
+                        <a href="mailto:coordinacion.titulo.diseno@uchilefau.cl" class="link-light">coordinacion.titulo.diseno@uchilefau.cl</a>
                     </div>
                 </div>
             </div>
         </div>
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
     </body>
 </html>
