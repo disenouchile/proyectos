@@ -45,7 +45,7 @@
                 font-size: calc(3rem * 0.5vw);
                 font-weight: 700;
                 line-height: 1.1;
-                margin: 2vw 0 1vw -0.02em;
+                margin: 2vw 0 1.4vw -0.05em;
             }
 
             h2 {
@@ -53,31 +53,34 @@
                 font-weight: 300;
                 color: rgba(33, 37, 41, 0.5);
                 margin-bottom: 3vw;
+                line-height: 1.3;
             }
 
-            h3 {
+            h3, h4 {
                 font-size: 0.85rem;
-                font-weight: 600;
+                font-weight: 700;
                 text-transform: uppercase;
                 letter-spacing: 0.05rem;
                 text-decoration: underline;
             }
+
 
             @media (orientation: landscape) {
                 h1 {
                     font-size: calc(3rem + 1vw);
                 }
                 h3 {
-                    font-size: calc(1rem + 0.5vw);
+                    font-size: calc(1rem + 0.25vw);
                     letter-spacing: 0.1rem;
+                    font-weight: 600;
                 }
-            }
 
-            h4 {
-                font-size: calc(1rem + 0.25vw);
-                font-weight: 600;
-                text-decoration: underline;
-                letter-spacing: 0.075rem;
+                h4 {
+                    font-size: calc(1rem + 0.1vw);
+                    letter-spacing: 0.1rem;
+                    font-weight: 700;
+                }
+
             }
 
             dl > dt {
@@ -129,7 +132,7 @@
                 </div>
             </header>
             <main class="row">
-                <section class="col-11 mx-auto py-2">
+                <section class="col-11 mx-auto py-1">
                     <h4>JUEVES 12, DESDE LAS 15:00 HRS.</h4>
                     <dl>
                         <dt>Proyecto I <a data-bs-toggle="collapse" href="#proyecto1" role="button" aria-expanded="false" aria-controls="proyecto1" class="m-0 p-0">AUD10001</a></dt>
